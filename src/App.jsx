@@ -3,8 +3,10 @@ import { Routes, Route } from 'react-router-dom';
 
 import Navbar from './components/Navbar.jsx';
 import Home from './components/Home.jsx';
+import  { AboutSection } from './components/About.jsx';
 import { StarBackGround } from './components/StarBackGround.jsx';
 import { ThemeToggle } from './components/ThemeToggle.jsx';
+import { SkillSection } from './components/SkillSection.jsx';
 
 const App = () => {
   return (
@@ -19,6 +21,10 @@ const App = () => {
       {/* Main Content */}
       <main>
         <Home/>
+        <AboutSection/>
+        <SkillSection />
+        {/* Add more sections as needed */}
+        
        
       </main>
 
