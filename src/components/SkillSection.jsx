@@ -6,7 +6,7 @@ import { technologies } from "../constants";
 
 export const SkillSection = () => {
   return (
-    <section id="about" className="py-24 px-4 relative">
+    <section id="about" className="py-20 px-4 relative">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold text-center">
           My <span className="text-primary"> Skills</span>
@@ -14,7 +14,7 @@ export const SkillSection = () => {
         <p className="text-lg text-gray-600">
           I have experience in various technologies and tools that help me build efficient and scalable applications.
         </p>
-        <div className="flex flex-row flex-wrap justify-center items-center gap-10 mt-6">
+        <div className="flex flex-row flex-wrap justify-center items-center gap-10 mt-2">
           {technologies.map((technology) => (
             <div
               key={technology.name}
@@ -28,7 +28,7 @@ export const SkillSection = () => {
             </div>
           ))}
         </div>
-        <img src={Skills} alt="Skills" className="w-full mt-4 h-[80%] " />
+        <img src={Skills} alt="Skills" className="w-full  h-[40%] transition-transform duration-1000 hover:rotate-[360deg]" />
         <div className="text-center mt-8"></div>
       </div>
     </section>

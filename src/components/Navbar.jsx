@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 
 import { X, Menu } from "lucide-react";
-import {ThemeToggle} from "./ThemeToggle";
+import { ThemeToggle } from "./ThemeToggle";
 
 const Navbar = () => {
   const navigate = useNavigate();
@@ -36,7 +36,9 @@ const Navbar = () => {
         {/* Logo & Branding */}
         <div className="flex items-right px-auto space-x-2">
           <span className="text-2xl font-semibold tracking-wide  mx-auto">
-            <a href="#home">Nivedika  <span className="text-purple-400">Sharma</span></a>
+            <a href="#home">
+              Nivedika <span className="text-purple-400">Sharma</span>
+            </a>
           </span>
         </div>
 
@@ -47,6 +49,7 @@ const Navbar = () => {
               Home
             </a>
           </li>
+
           <li>
             <a href="#Experience" className="hover:text-white transition">
               Experience
@@ -71,21 +74,16 @@ const Navbar = () => {
           </li>
 
           <li>
-           <ThemeToggle />
+            <ThemeToggle />
           </li>
         </ul>
-       
-       
 
         <div className="hidden lg:flex lg:px-4 items-center "></div>
-        
 
         {/* Mobile Menu Button */}
         <button className="lg:hidden" onClick={() => setMenuOpen(!menuOpen)}>
           {menuOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}
         </button>
-      
-        
 
         {/* Mobile Menu */}
         {menuOpen && (
@@ -118,9 +116,6 @@ const Navbar = () => {
                   Contact
                 </a>
               </li>
-              
-
-              
             </ul>
           </div>
         )}
