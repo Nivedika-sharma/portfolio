@@ -7,6 +7,7 @@ import  { AboutSection } from './components/About.jsx';
 import { StarBackGround } from './components/StarBackGround.jsx';
 import { ThemeToggle } from './components/ThemeToggle.jsx';
 import { SkillSection } from './components/SkillSection.jsx';
+import ExperienceSection from './components/Experiencesection.jsx';
 
 const App = () => {
   return (
@@ -23,6 +24,8 @@ const App = () => {
         <Home/>
         <AboutSection/>
         <SkillSection />
+        <ExperienceSection />
+
         {/* Add more sections as needed */}
         
        
