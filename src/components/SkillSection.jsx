@@ -29,7 +29,6 @@ export const SkillSection = () => {
           ))}
         </div>
         <img src={Skills} alt="Skills" className="w-full mt-4 h-[80%] " />
-        <div className="text-center mt-8"></div>
       </div>
     </section>
   )
