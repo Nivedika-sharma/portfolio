@@ -3,8 +3,10 @@ import avatar from "../assets/avatar.png";
 
 const Home = () => {
   return (
-    <section id="home" className="flex flex-col justify-center items-center h-screen  text-white relative overflow-hidden px-20">
-
+    <section
+      id="home"
+      className="flex flex-col justify-center items-center h-screen  text-white relative overflow-hidden px-20"
+    >
       {/* Avatar & Glowing Effect */}
       {/* Intro Text */}
       <div className="relative  mt-10">
@@ -31,8 +33,9 @@ const Home = () => {
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-           Hello! I’m a CSE undergrad from SRMSCET, Bareilly who loves to build things.
-           From AI models to full-stack apps, I bring ideas to life with code.
+            Hello! I’m a CSE undergrad from SRMSCET, Bareilly who loves to build
+            things. From AI models to full-stack apps, I bring ideas to life
+            with code.
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
@@ -43,19 +46,11 @@ const Home = () => {
         </div>
       </div>
 
-  
-
-        
-     
-
-      
-
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
         <span className="text-sm text-gray-400 mb-2">Scroll</span>
         <ArrowDown className="h-5 w-5 text-purple-400" />
       </div>
-
     </section>
   );
 };
