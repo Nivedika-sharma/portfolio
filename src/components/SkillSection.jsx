@@ -28,8 +28,7 @@ export const SkillSection = () => {
             </div>
           ))}
         </div>
-        <img src={Skills} alt="Skills" className="w-full  h-[40%] transition-transform duration-1000 hover:rotate-[360deg]" />
-        <div className="text-center mt-8"></div>
+        <img src={Skills} alt="Skills" className="w-full mt-4 h-[80%] " />
       </div>
     </section>
   )
