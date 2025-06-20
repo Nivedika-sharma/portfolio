@@ -55,10 +55,10 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-                <a href="#Skills" className="hover:text-white transition">
-                  Skills
-                </a>
-              </li>
+            <a href="#Skills" className="hover:text-white transition">
+              Skills
+            </a>
+          </li>
 
           <li>
             <a href="#Experience" className="hover:text-white transition">
@@ -71,7 +71,8 @@ const Navbar = () => {
               Projects
             </a>
           </li>
-           <li>
+          
+          <li>
             <a href="#Achievements" className="hover:text-white transition">
               Achievements
             </a>
@@ -113,7 +114,7 @@ const Navbar = () => {
                 </a>
               </li>
               <li>
-                <a href="#Skills" className="hover:text-white transition">
+              <a href="#Skills" className="hover:text-white transition">
                   Skills
                 </a>
               </li>
@@ -130,13 +131,14 @@ const Navbar = () => {
                 </a>
               </li>
               
+                
               <li>
                 <a href="#Achievements" className="hover:text-white transition">
                   Achievements
                 </a>
               </li>
               <li>
-                <a href="#Contact" className="hover:text-white transition">
+                <a href="#contact" className="hover:text-white transition">
                   Contact
                 </a>
               </li>
