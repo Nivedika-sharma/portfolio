@@ -17,7 +17,7 @@ export const AboutSection = () => {
 
             <p className="text-muted-foreground">
               I’m Nivedika Sharma, a dedicated Computer Science Engineering
-              student at SRMSCET, Bareilly, currently maintaining a CGPA of 9..
+              student at SRMSCET, Bareilly, currently maintaining a CGPA of 9.16 .
               I’m passionate about building innovative digital solutions that
               blend strong problem-solving skills with modern technologies.
             </p>

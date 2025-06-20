@@ -37,7 +37,7 @@ const Navbar = () => {
         <div className="flex items-right px-auto space-x-2">
           <span className="text-2xl font-semibold tracking-wide  mx-auto">
             <a href="#home">
-              Nivedika <span className="text-purple-400">Sharma</span>
+              Nivedika <span className="text-primary">Sharma</span>
             </a>
           </span>
         </div>
@@ -72,10 +72,11 @@ const Navbar = () => {
               Contact
             </a>
           </li>
-
           <li>
-            <ThemeToggle />
+            <ThemeToggle /> 
           </li>
+
+          
         </ul>
 
         <div className="hidden lg:flex lg:px-4 items-center "></div>
@@ -88,7 +89,7 @@ const Navbar = () => {
         {/* Mobile Menu */}
         {menuOpen && (
           <div className="lg:hidden fixed top-16 left-0 w-full bg-[#0a0014] text-white p-2 space-y-4 z-50 shadow-lg">
-            <ThemeToggle />
+          <themeToggle />
             <ul className="space-y-4 text-center px-6 text-lg">
               <li>
                 <a href="#home" className="hover:text-white transition">

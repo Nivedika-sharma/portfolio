@@ -9,13 +9,13 @@ import { ThemeToggle } from './components/ThemeToggle.jsx';
 import { SkillSection } from './components/SkillSection.jsx';
 import ExperienceSection from './components/Experiencesection.jsx';
 import ProjectSection from './components/Projects.jsx';
+import AchievementsSection from './components/Achievement.jsx';
 
 
 const App = () => {
   return (
         <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
-      {/* Theme Toggle */}
-      <ThemeToggle />
+     
       {/* Background Effects */}
       <StarBackGround />
 
@@ -28,6 +28,8 @@ const App = () => {
         <SkillSection />
         <ExperienceSection />
         <ProjectSection />
+        <AchievementsSection />
+      
         
 
         {/* Add more sections as needed */}
