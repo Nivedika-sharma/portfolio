@@ -2,7 +2,7 @@ import React from 'react'
 import { useNavigate } from 'react-router-dom'; 
 import Skills from '../assets/Skills.png';
 import { technologies } from "../constants";
-
+import Tilt from "react-parallax-tilt";
 
 export const SkillSection = () => {
   return (
@@ -16,9 +16,10 @@ export const SkillSection = () => {
         </p>
         <div className="flex flex-row flex-wrap justify-center items-center gap-10 mt-1">
           {technologies.map((technology) => (
+            <Tilt tiltMaxAngleX={360} tiltMaxAngleY={360} >
             <div
               key={technology.name}
-              className="w-12 h-12 rounded-full bg-white/10 dark:bg-gray-800 flex items-center justify-center"
+              className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center"
             >
               <img
                 src={technology.icon}
@@ -26,6 +27,7 @@ export const SkillSection = () => {
                 className="w-8 h-8 object-contain"
               />
             </div>
+            </Tilt>
           ))}
         </div>
         <img src={Skills} alt="Skills" className="w-full h-[80%] transition-transform duration-1000 hover:rotate-y-180" />

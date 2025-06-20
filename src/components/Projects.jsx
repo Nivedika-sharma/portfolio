@@ -14,7 +14,7 @@ const projects = [
       "Developed with Flutter, Dart, and Node.js, this mobile application uses AI to analyze images, predict the type and intensity of natural disasters, and help authorities respond effectively. .",
     image: jalaj,
     tags: ["FLutter", "Node.js", "Python", "AI", "Disaster Management"],
-    demoUrl: "#",
+    //demoUrl: "#",
     githubUrl: "https://github.com/Yashgupta683/Jalaj.git",
   },
   {
@@ -24,7 +24,7 @@ const projects = [
       "The problem involves developing a comprehensive navigation solution for railway stations that assists passengers in locating various facilities and destinations within the station premises.",
     image: yatripath,
     tags: ["FLutter", "AR", "Navigation", "3D Mapping"],
-    demoUrl: "#",
+    //demoUrl: "#",
     githubUrl:
       "https://github.com/Nivedika-sharma/YatriPath-Your-Station-Your-Way",
   },
