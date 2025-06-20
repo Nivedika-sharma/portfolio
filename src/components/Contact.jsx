@@ -13,7 +13,7 @@ const Contact = () => {
   const [form, setForm] = useState({
     name:"",
     email:"",
-    mesaage:""
+    message:""
   });
 
   const[loading,setLoading]= useState(false);
@@ -28,25 +28,27 @@ const Contact = () => {
       >
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
-          className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
+          className='flex-[0.55] bg-black-100 p-14 rounded-2xl'
         >
-          <p className={styles.sectionSubText}>Get in touch</p>
-          <h3 className={styles.sectionHeadText}>Contact.</h3>
+          <p className="text-sm">Get in touch</p>
+           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+            Con<span className="text-primary">tact</span>
+        </h2>
         
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className='mt-12 flex flex-col gap-8'
+            className=' flex flex-col gap-2'
           >
             <label className='flex flex-col'>
-              <span className='text-white font-medium mb-4'>Your Name</span>
+              <span className='text-white font-medium mb-2'>Your Name</span>
               <input
                 type='text'
                 name='name'
-                value={form.name}
+                value={form.name} 
                 onChange={handleChange}
                 placeholder="What's your good name?"
-                className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+                className='bg-primary/10 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
               />
             </label>
             <label className='flex flex-col'>
@@ -57,10 +59,8 @@ const Contact = () => {
                 value={form.email}
                 onChange={handleChange}
                 placeholder="What's your web address?"
-                className=' -80 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
-               style={{
-            background:
-              "linear-gradient(215.15deg, rgba(52, 41, 66, 0.53) -171.85%, rgba(151, 71, 255, 0.53) 85.28%, rgba(140, 69, 255, 0.212) 122.51%)"  }}
+                className='bg-primary/10 -80 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+              
               />
             </label>
             <label className='flex flex-col'>
@@ -71,13 +71,13 @@ const Contact = () => {
                 value={form.message}
                 onChange={handleChange}
                 placeholder='What you want to say?'
-                className='bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
+                className='bg-primary/10 py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium'
               />
             </label>
 
             <button
               type='submit'
-              className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+              className='bg-tertiary py-3 px-6 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
             >
               {loading? "Sending..." : "Send"}
             </button>
