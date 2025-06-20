@@ -35,7 +35,7 @@ const achievements = [
 const AchievementCard = ({ icon: Icon, title, description }) => {
   return (
     <div
-      className="p-6 rounded-[1.5rem] text-white transition-transform duration-500 transform-gpu
+      className="p-6 rounded-[1.5rem] transition-transform duration-500 transform-gpu
       hover:scale-[1.09] hover:-translate-y-4  hover:shadow-lg hover:shadow-primary/50
       hover:backdrop-blur-lg backdrop-blur-sm
       bg-card"
@@ -51,13 +51,13 @@ const AchievementCard = ({ icon: Icon, title, description }) => {
             transform: "rotateX(12deg) rotateY(-9deg)",
           }}
         >
-          <Icon size={28} className="text-white" aria-hidden="true" />
+          <Icon size={28} className=" text-white" aria-hidden="true" />
         </div>
       )}
       <h3 className="text-lg font-semibold mb-2 drop-shadow-[0_1px_1px_rgba(255,255,255,0.2)]">
         {title}
       </h3>
-      <p className="text-gray-400 text-sm leading-snug tracking-wide">
+      <p className=" text-sm leading-snug tracking-wide">
         {description}
       </p>
     </div>
@@ -69,7 +69,7 @@ const AchievementsSection = () => {
   return (
     <section id="Achievements" className="min-h-screen  py-20 px-6">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-white text-4xl font-bold mb-12 text-center">
+        <h2 className=" text-4xl font-bold mb-12 text-center">
           Achiev<span className="text-primary">ements</span>
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">

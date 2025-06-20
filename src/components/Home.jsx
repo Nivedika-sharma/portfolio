@@ -5,13 +5,14 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="flex flex-col justify-center items-center h-screen  text-white relative overflow-hidden px-20"
+      className="min-h-screen
+      flex flex-col justify-center items-center    overflow-hidden px-18"
     >
       {/* Avatar & Glowing Effect */}
       {/* Intro Text */}
-      <div className="relative  mt-10">
+      <div className="relative ">
         {/* Glowing circle background */}
-        <div className="absolute  inset-0 w-44 h-52 bg-purple-500 blur-3xl opacity-50 rounded-full z-0" />
+        <div className="absolute  inset-0 w-52 h-5 bg-purple-500 blur-3xl opacity-50 rounded-full z-0" />
         <img
           src={avatar}
           alt="Avatar"
@@ -47,7 +48,7 @@ const Home = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
+      <div className="absolute bottom-4  left-1/2 transform -translate-x-1/2 flex flex-col items-center animate-bounce">
         <span className="text-sm text-gray-400 mb-2">Scroll</span>
         <ArrowDown className="h-5 w-5 text-purple-400" />
       </div>

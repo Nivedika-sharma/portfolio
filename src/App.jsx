@@ -16,7 +16,7 @@ import HomePage from "./Pages/Homepage.jsx";
 
 const App = () => {
   return (
-    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+    <div className="min-h-screen bg-base text-base overflow-x-hidden">
       {/* Static Parts: Always Rendered */}
       <StarBackGround />
       <Navbar />

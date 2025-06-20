@@ -45,41 +45,41 @@ const Navbar = () => {
         {/* Desktop Navigation */}
         <ul className="hidden ml-auto lg:flex space-x-14 text-lg lg:space-x-8 lg:text-base xl:text-lg xl:space-x-10">
           <li>
-            <a href="#home" className="hover:text-white transition">
+            <a href="#home" className="hover:text-primary transition">
               Home
             </a>
           </li>
           <li>
-            <a href="#About" className="hover:text-white transition">
+            <a href="#About" className="hover:text-primary transition">
               About
             </a>
           </li>
           <li>
-            <a href="#Skills" className="hover:text-white transition">
+            <a href="#Skills" className="hover:text-primary transition">
               Skills
             </a>
           </li>
 
           <li>
-            <a href="#Experience" className="hover:text-white transition">
+            <a href="#Experience" className="hover:text-primary transition">
               Experience
             </a>
           </li>
 
           <li>
-            <a href="#Projects" className="hover:text-white transition">
+            <a href="#Projects" className="hover:text-primary transition">
               Projects
             </a>
           </li>
-          
+
           <li>
-            <a href="#Achievements" className="hover:text-white transition">
+            <a href="#Achievements" className="hover:text-primary transition">
               Achievements
             </a>
           </li>
 
           <li>
-            <a href="#Contact" className="hover:text-white transition">
+            <a href="#Contact" className="hover:text-primary transition">
               Contact
             </a>
           </li>
@@ -97,48 +97,49 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="lg:hidden fixed top-16 left-0 w-full bg-[#0a0014] text-white p-2 space-y-4 z-50 shadow-lg">
-           
+          <div className="lg:hidden fixed top-16 left-0 w-full  p-2 space-y-4 z-50 shadow-lg">
             <ul className="space-y-4 text-center px-6 text-lg">
-            <li>
-              <ThemeToggle />
-            </li>
               <li>
-                <a href="#home" className="hover:text-white transition">
+                <ThemeToggle />
+              </li>
+              <li>
+                <a href="#home" className="hover:text-primary transition">
                   Home
                 </a>
               </li>
               <li>
-                <a href="#About Me" className="hover:text-white transition">
+                <a href="#About Me" className="hover:text-primary transition">
                   About
                 </a>
               </li>
               <li>
-              <a href="#Skills" className="hover:text-white transition">
+                <a href="#Skills" className="hover:text-primary transition">
                   Skills
                 </a>
               </li>
 
               <li>
-                <a href="#Experience" className="hover:text-white transition">
+                <a href="#Experience" className="hover:text-primary transition">
                   Experience
                 </a>
               </li>
 
               <li>
-                <a href="#Projects" className="hover:text-white transition">
+                <a href="#Projects" className="hover:text-primary transition">
                   Projects
                 </a>
               </li>
-              
-                
+
               <li>
-                <a href="#Achievements" className="hover:text-white transition">
+                <a
+                  href="#Achievements"
+                  className="hover:text-primary transition"
+                >
                   Achievements
                 </a>
               </li>
               <li>
-                <a href="#contact" className="hover:text-white transition">
+                <a href="#contact" className="hover:text-primary transition">
                   Contact
                 </a>
               </li>
