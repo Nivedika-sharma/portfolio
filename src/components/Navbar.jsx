@@ -97,7 +97,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="lg:hidden fixed top-16 left-0 w-full  p-2 space-y-4 z-50 shadow-lg">
+          <div className="lg:hidden fixed top-16 left-0 w-full bg-primary/5  p-2 space-y-4 z-50 shadow-lg">
             <ul className="space-y-4 text-center px-6 text-lg">
               <li>
                 <ThemeToggle />
