@@ -1,8 +1,11 @@
 import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import Tilt from "react-parallax-tilt";
 import React from "react";
 import jalaj from "../assets/jalaj.jpeg";
 import yatripath from "../assets/yatripath.jpeg";
 import PowerBI from "../assets/PowerBI.png";
+import iris from "../assets/iris.jpg";
+import weather from "../assets/weather.jpg";
 const projects = [
   {
     id: 1,
@@ -36,6 +39,29 @@ const projects = [
     githubUrl:
       "https://github.com/Nivedika-sharma/Global-Energy-Trends-A-Comprehensive-Analysis-of-Key-Regions-and-Generation-Modes-using-Power-BI",
   },
+  {
+    id: 4,
+    title: "Iris Recognition",
+    description:
+    " Machine learning model for classifying iris species (setosa, versicolor, virginica), built using scikit-learn and Python.",
+    image: iris,
+    tags: ["Python", "Scikit-learn","Numpy","Pandas", "Machine Learning"],
+    demoUrl: "https://irisspeciesprediction-psrjnfsycvza5ue8jhxwhx.streamlit.app/",
+    githubUrl:
+      "https://github.com/Nivedika-sharma/Iris_species_prediction",
+  },
+  {
+    id: 5,
+    title: "Weather Prediction",
+    description:
+     "Time series forecasting model for predicting weather patterns using scikit-learn, statsmodels, and other data analytics tools.",
+    image: weather,
+    tags: [" Python","Forecasting", "Machine Learning"],
+    demoUrl: "https://weatherprediction-68jlwjbd2ydgw3h7fzljpw.streamlit.app/",
+    githubUrl:
+      "https://github.com/Nivedika-sharma/Weather_predictionusing-Power-BI",
+  },
+  
 ];
 const ProjectSection = () => {
   return (
@@ -52,11 +78,13 @@ const ProjectSection = () => {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
           {projects.map((project, key) => (
             <div
               key={key}
               className="group bg-card rounded-4xl overflow-hidden shadow-xs card-hover transition-transform duration-500 transform hover:scale-105 active:scale-100"
             >
+              <Tilt>
               <div className="h-48 overflow-hidden">
                 <img
                   src={project.image}
@@ -97,8 +125,11 @@ const ProjectSection = () => {
                   </div>
                 </div>
               </div>
+              </Tilt>
             </div>
+            
           ))}
+         
         </div>
 
         <div className="text-center mt-12">
