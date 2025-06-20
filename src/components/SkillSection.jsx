@@ -6,7 +6,7 @@ import { technologies } from "../constants";
 
 export const SkillSection = () => {
   return (
-    <section id="about" className="py-20 px-4 relative">
+    <section id="Skills" className="py-20 px-4 relative">
       <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold text-center">
           My <span className="text-primary"> Skills</span>

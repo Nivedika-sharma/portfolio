@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Routes, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import { X, Menu } from "lucide-react";
 import { ThemeToggle } from "./ThemeToggle";
@@ -36,47 +36,55 @@ const Navbar = () => {
         {/* Logo & Branding */}
         <div className="flex items-right px-auto space-x-2">
           <span className="text-2xl font-semibold tracking-wide  mx-auto">
-            <a href="#home">
+            <Link to="/home">
               Nivedika <span className="text-primary">Sharma</span>
-            </a>
+            </Link>
           </span>
         </div>
 
         {/* Desktop Navigation */}
-        <ul className="hidden ml-auto lg:flex space-x-16 text-lg lg:space-x-8 lg:text-base xl:text-lg xl:space-x-16">
+        <ul className="hidden ml-auto lg:flex space-x-14 text-lg lg:space-x-8 lg:text-base xl:text-lg xl:space-x-10">
           <li>
-            <a href="#home" className="hover:text-white transition">
+            <Link to="/home" className="hover:text-white transition">
               Home
-            </a>
+            </Link>
+          </li>
+          <li>
+            <Link to="/About" className="hover:text-white transition">
+              About
+            </Link>
           </li>
 
           <li>
-            <a href="#Experience" className="hover:text-white transition">
+            <Link to="/Experience" className="hover:text-white transition">
               Experience
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a href="#Projects" className="hover:text-white transition">
+            <Link to="/Projects" className="hover:text-white transition">
               Projects
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#Skills" className="hover:text-white transition">
+            <Link to="/Skills" className="hover:text-white transition">
               Skills
-            </a>
+            </Link>
+          </li>
+          <li>
+            <Link to="/Achievements" className="hover:text-white transition">
+              Achievements
+            </Link>
           </li>
 
           <li>
-            <a href="#contact" className="hover:text-white transition">
+            <Link to="/Contact" className="hover:text-white transition">
               Contact
-            </a>
+            </Link>
           </li>
           <li>
-            <ThemeToggle /> 
+            <ThemeToggle />
           </li>
-
-          
         </ul>
 
         <div className="hidden lg:flex lg:px-4 items-center "></div>
@@ -88,34 +96,48 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="lg:hidden fixed top-16 left-0 w-full bg-[#0a0014] text-white p-2 space-y-4 z-50 shadow-lg">
-          <themeToggle />
+          <div className="lg:hidden fixed top-16 left-0 w-full bg-[/0a0014] text-white p-2 space-y-4 z-50 shadow-lg">
+           
             <ul className="space-y-4 text-center px-6 text-lg">
+            <li>
+              <ThemeToggle />
+            </li>
               <li>
-                <a href="#home" className="hover:text-white transition">
+                <Link to="/home" className="hover:text-white transition">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#Experience" className="hover:text-white transition">
-                  Experience
-                </a>
+                <Link to="/About Me" className="hover:text-white transition">
+                  About
+                </Link>
               </li>
 
               <li>
-                <a href="#Projects" className="hover:text-white transition">
+                <Link to="/Experience" className="hover:text-white transition">
+                  Experience
+                </Link>
+              </li>
+
+              <li>
+                <Link to="/Projects" className="hover:text-white transition">
                   Projects
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#Skills" className="hover:text-white transition">
+                <Link to="/Skills" className="hover:text-white transition">
                   Skills
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#contact" className="hover:text-white transition">
+                <Link to="/Achievements" className="hover:text-white transition">
+                  Achievements
+                </Link>
+              </li>
+              <li>
+                <Link to="/Contact" className="hover:text-white transition">
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>

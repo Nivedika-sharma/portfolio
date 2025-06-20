@@ -67,7 +67,7 @@ const AchievementCard = ({ icon: Icon, title, description }) => {
 // Main Section Component
 const AchievementsSection = () => {
   return (
-    <section className="min-h-screen  py-20 px-6">
+    <section id="Achievements" className="min-h-screen  py-20 px-6">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-white text-4xl font-bold mb-12 text-center">
           Achiev<span className="text-primary">ements</span>

@@ -10,6 +10,7 @@ import { SkillSection } from './components/SkillSection.jsx';
 import ExperienceSection from './components/Experiencesection.jsx';
 import ProjectSection from './components/Projects.jsx';
 import AchievementsSection from './components/Achievement.jsx';
+import Contact from './components/Contact.jsx';
 
 
 const App = () => {
@@ -29,15 +30,23 @@ const App = () => {
         <ExperienceSection />
         <ProjectSection />
         <AchievementsSection />
-      
-        
-
-        {/* Add more sections as needed */}
+        <Contact />
+  
         
        
       </main>
 
       {/* Footer */}
+      <Routes>
+        <Route path="/Home" element={<Home />} />
+        <Route path="/About" element={<AboutSection />} />
+        <Route path="/Experience" element={<ExperienceSection />} />
+        <Route path="/Projects" element={<ProjectSection />} />
+        <Route path="/Skills" element={<SkillSection />} />
+        <Route path="/Achievements" element={<AchievementsSection />} />
+        <Route path="/Contact" element={<Contact />} />
+      </Routes>
+    
       
     </div>
 
