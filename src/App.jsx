@@ -1,55 +1,39 @@
-import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 
-import Navbar from './components/Navbar.jsx';
-import Home from './components/Home.jsx';
-import  { AboutSection } from './components/About.jsx';
-import { StarBackGround } from './components/StarBackGround.jsx';
-import { ThemeToggle } from './components/ThemeToggle.jsx';
-import { SkillSection } from './components/SkillSection.jsx';
-import ExperienceSection from './components/Experiencesection.jsx';
-import ProjectSection from './components/Projects.jsx';
-import AchievementsSection from './components/Achievement.jsx';
-import Contact from './components/Contact.jsx';
+import Navbar from "./components/Navbar.jsx";
+import { StarBackGround } from "./components/StarBackGround.jsx";
 
+
+import Home from "./components/Home.jsx";
+import { AboutSection } from "./components/About.jsx";
+import { SkillSection } from "./components/SkillSection.jsx";
+import ExperienceSection from "./components/Experiencesection.jsx";
+import ProjectSection from "./components/Projects.jsx";
+import AchievementsSection from "./components/Achievement.jsx";
+import Contact from "./components/Contact.jsx";
+import HomePage from "./Pages/Homepage.jsx";
 
 const App = () => {
   return (
-        <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
-     
-      {/* Background Effects */}
+    <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
+      {/* Static Parts: Always Rendered */}
       <StarBackGround />
-
-      {/* Navbar */}
       <Navbar />
-      {/* Main Content */}
-      <main>
-        <Home/>
-        <AboutSection/>
-        <SkillSection />
-        <ExperienceSection />
-        <ProjectSection />
-        <AchievementsSection />
-        <Contact />
-  
-        
-       
+
+      {/* Route Content: Only This Changes */}
+      <main className="pt-16">
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about" element={<AboutSection />} />
+          <Route path="/skills" element={<SkillSection />} />
+          <Route path="/experience" element={<ExperienceSection />} />
+          <Route path="/projects" element={<ProjectSection />} />
+          <Route path="/achievements" element={<AchievementsSection />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </main>
-
-      {/* Footer */}
-      <Routes>
-        <Route path="/Home" element={<Home />} />
-        <Route path="/About" element={<AboutSection />} />
-        <Route path="/Experience" element={<ExperienceSection />} />
-        <Route path="/Projects" element={<ProjectSection />} />
-        <Route path="/Skills" element={<SkillSection />} />
-        <Route path="/Achievements" element={<AchievementsSection />} />
-        <Route path="/Contact" element={<Contact />} />
-      </Routes>
-    
-      
     </div>
-
   );
 };
 
