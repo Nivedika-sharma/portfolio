@@ -38,7 +38,7 @@ const App = () => {
           <AchievementsSection />
         </section>
         <section id="contact">
-          <Contact />S
+          <Contact />
         </section>
       </main>
       <Footer/>
