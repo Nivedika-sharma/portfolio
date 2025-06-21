@@ -23,7 +23,7 @@ const socialLinks = [
 
 
   return (
-    <footer className="bg-gray-800 text-white py-6 mt-8">
+    <footer className="bg-card bg-opacity-50 p-8 rounded-2xl shadow-md shadow-primary/20 text-white py-6 mt-8">
       <div className="container mx-auto text-center">
         <p className="text-lg rounded-lg">
           &copy; {new Date().getFullYear()} Nivedika Sharma. All rights reserved.
