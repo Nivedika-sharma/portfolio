@@ -10,6 +10,7 @@ import ExperienceSection from "./components/Experiencesection.jsx";
 import ProjectSection from "./components/Projects.jsx";
 import AchievementsSection from "./components/Achievement.jsx";
 import Contact from "./components/Contact.jsx";
+import Footer from "./components/Footer.jsx";
 
 const App = () => {
   return (
@@ -37,9 +38,10 @@ const App = () => {
           <AchievementsSection />
         </section>
         <section id="contact">
-          <Contact />
+          <Contact />S
         </section>
       </main>
+      <Footer/>
     </div>
   );
 };
