@@ -26,7 +26,7 @@ const Navbar = () => {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 w-full max-w-full bg-gray-800 opacity-100 text-Black py-4 px-6 flex items-center justify-between z-40 shadow-md backdrop-blur-md 
+        className={`fixed top-0 left-0 w-full max-w-full opacity-100 text-Black py-4 px-6 flex items-center justify-between z-40 shadow-md backdrop-blur-md 
   ${
     scrolled
       ? "border-b border-gray-500/50 transition-all duration-300"
@@ -97,7 +97,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className="lg:hidden fixed top-16 left-0 w-full bg-primary/5  p-2 space-y-4 z-50 shadow-lg">
+          <div className="lg:hidden fixed top-16 left-0 w-full bg-card bg-opacity-50  rounded-2xl shadow-primary/20 p-2 space-y-4 z-50 shadow-lg">
             <ul className="space-y-4 text-center px-6 text-lg">
               <li>
                 <ThemeToggle />
