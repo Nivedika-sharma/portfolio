@@ -60,21 +60,21 @@ const Contact = () => {
     <>
     <section id="Contact" >
       <div
-        className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+        className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10  overflow-hidden`}
       >
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
-          className='flex-[0.55] bg-black-100 p-14 rounded-2xl'
+          className='flex-[0.55] bg-black-100 p-20 rounded-2xl'
         >
           <p className="text-sm">Get in touch</p>
-           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
             Con<span className="text-primary">tact</span>
         </h2>
         
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className=' flex flex-col gap-2'
+            className=' flex flex-col gap-2 bg-card bg-opacity-50 p-8 rounded-2xl shadow-md shadow-primary/20'
           >
             <label className='flex flex-col'>
               <span className=' font-medium mb-2'>Your Name</span>
