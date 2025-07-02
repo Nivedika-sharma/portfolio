@@ -54,7 +54,7 @@ const projects = [
       "https://github.com/Nivedika-sharma/Global-Energy-Trends-A-Comprehensive-Analysis-of-Key-Regions-and-Generation-Modes-using-Power-BI",
   },
   {
-    id: 4,
+    id: 5,
     title: "Iris Recognition",
     description:
     " Machine learning model for classifying iris species (setosa, versicolor, virginica), built using scikit-learn and Python.",
@@ -65,7 +65,7 @@ const projects = [
       "https://github.com/Nivedika-sharma/Iris_species_prediction",
   },
   {
-    id: 4,
+    id: 6,
     title: "Weather Prediction",
     description:
      "Time series forecasting model for predicting weather patterns using scikit-learn, statsmodels, and other data analytics tools.",
