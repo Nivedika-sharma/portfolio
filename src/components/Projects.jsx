@@ -6,6 +6,7 @@ import yatripath from "../assets/yatripath.jpeg";
 import PowerBI from "../assets/PowerBI.png";
 import iris from "../assets/iris.jpg";
 import weather from "../assets/weather.jpg";
+import RealVo from "../assets/RealVo.png";
 const projects = [
   {
     id: 1,
@@ -28,8 +29,21 @@ const projects = [
     githubUrl:
       "https://github.com/Nivedika-sharma/YatriPath-Your-Station-Your-Way",
   },
-  {
+   {
     id: 3,
+    title: "RealVo",
+    description:
+      "Real-time messaging with typing indicators, reactions, and video calls (1-on-1 & group) with screen sharing and recording.",
+    image: RealVo,
+    tags: ["RealTimeChat",
+  "VideoCalling",
+  "ScreenSharing",],
+  demoUrl: "https://realvo.onrender.com/",
+    githubUrl:
+      "https://github.com/Nivedika-sharma/RealVo",
+  },
+  {
+    id: 4,
     title: "Global Energy Trends",
     description:
       "This project uses Power BI to analyze global energy production data across different regions and energy sources. It provides pinteractive visualizations to compare trends, track shifts in generation modes, and support data-driven energy policy decisions. ..",
@@ -51,7 +65,7 @@ const projects = [
       "https://github.com/Nivedika-sharma/Iris_species_prediction",
   },
   {
-    id: 5,
+    id: 4,
     title: "Weather Prediction",
     description:
      "Time series forecasting model for predicting weather patterns using scikit-learn, statsmodels, and other data analytics tools.",
